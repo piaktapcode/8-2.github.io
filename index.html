@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Our Memory ❤️</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-overlay"></div>
+    <div class="particles" id="particles"></div>
+    <audio id="bgMusic" src="style/nhac.mp3" loop preload="auto"></audio>
+
+    <div id="passcodeOverlay">
+        <div class="passcode-container">
+            <div class="passcode-form">
+                <div class="passcode-title"> Enter Your Password </div>
+                <div class="passcode-display" id="passcodeDisplay">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="keypad">
+                    <div class="key" onclick="enterDigit('1')">1</div>
+                    <div class="key" onclick="enterDigit('2')">2</div>
+                    <div class="key" onclick="enterDigit('3')">3</div>
+                    <div class="key" onclick="enterDigit('4')">4</div>
+                    <div class="key" onclick="enterDigit('5')">5</div>
+                    <div class="key" onclick="enterDigit('6')">6</div>
+                    <div class="key" onclick="enterDigit('7')">7</div>
+                    <div class="key" onclick="enterDigit('8')">8</div>
+                    <div class="key" onclick="enterDigit('9')">9</div>
+                    <div class="key special" onclick="clearPasscode()">XÓA</div>
+                    <div class="key" onclick="enterDigit('0')">0</div>
+                    <div class="key special" onclick="deleteDigit()">⌫</div>
+                </div>
+            </div>
+
+            <div class="passcode-slider" id="passcodeSlider">
+                <img src="style/img/Anh (21).jpg" alt="Memory">
+                <div class="slide-hint">Trượt sang trái để mở khóa &laquo;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heart-section">
+        <div class="heart-container-wrapper">
+            <div class="heart-mosaic" id="mosaicContainer">
+            </div>
+        </div>
+    </div>
+
+    <div id="secretOverlay">
+        <button class="close-secret" id="closeSecret">&times;</button>
+        <div class="marquee-container">
+            <div class="marquee-line top" id="marqueeTop"></div>
+            <div class="marquee-line bottom" id="marqueeBottom"></div>
+        </div>
+    </div>
+
+    <div class="chat-section" id="chatSection">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <div class="chat-avatar">❤️</div>
+                <div class="chat-user-info">
+                    <div class="chat-user-name">Gửi từ Trái tim</div>
+                    <div class="chat-user-status">
+                        <div class="status-dot"></div> Đang hoạt động
+                    </div>
+                </div>
+                <div class="chat-action-icons">
+                    <span>📞</span>
+                    <span>📹</span>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+            </div>
+
+            <div class="chat-input-bar">
+                <div class="chat-action-icons">
+                    <span>⊕</span>
+                    <span>📷</span>
+                </div>
+                <div class="fake-input">Aa</div>
+                <div class="chat-action-icons">
+                    <span>👍</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="msg-notification" id="msgNoti">
+        <span>💌</span>
+        <div class="msg-badge">99+</div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+        <div class="overlay-content">
+            <div class="close-btn" id="closeOverlay">&times;</div>
+            <img src="" alt="Enlarged" id="overlayImage">
+            <div class="overlay-caption" id="overlayCaption">Ghi chú ảnh</div>
+            <button class="secret-btn" id="secretBtn">
+                Secret
+            </button>
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script src="./style/script.js"></script>
+</body>
+
+</html>
+<p></p>
